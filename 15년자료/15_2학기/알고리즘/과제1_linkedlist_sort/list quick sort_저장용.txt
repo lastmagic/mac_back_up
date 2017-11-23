@@ -1,0 +1,34 @@
+void list_sort_quick(d_list L,int left, int right)
+{
+	int cntL = 0;
+	int cntR = 0;
+	int cntP = 0;
+	int pivot = left;
+	d_node *getL, *getR, *getP;
+	for (d_node * temp = L.head->right; temp != L.tale; temp = temp->right)
+	{
+		if (cntL == left)
+			getL = temp;
+		if (cntR == right)
+			getR = temp;
+		if (cntP == pivot)
+			getP = temp;
+		cntL++; cntR++; cntP++;
+	}
+	while (left < right)
+	{
+		while (getP->data <= getL->data)
+		{
+			getL = getL->right;
+		}	//¸ØÃß°í
+		while (getP->data >= getR->data)
+		{
+			getR = getR->left;
+		}
+		int temp = getL->data;
+		getL->data = getR->data;
+		getR->data = temp;
+	}
+	list_sort_quick(L, left, pivot - 1);
+	list_sort_quick(L, pivot + 1, right);
+}

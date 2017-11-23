@@ -1,0 +1,73 @@
+#include <stdio.h>
+
+int W = 52;
+int arr[] = { 2, 10, 13, 17, 22, 42 };
+
+char result[10] = "";
+
+int count = 0;
+
+void exchangeSort(int arr[], int size){ // decrease order로 sort하는 함수이다.
+	int temp = -1;
+	for (int i = 0; i < size; i++){
+		for (int j = 0; j < size; j++){
+			if (arr[i]>arr[j]){
+				temp = arr[j];
+				arr[j] = arr[i];
+				arr[i] = temp;
+			}
+
+		}
+	}
+}
+bool promising(int level, int presentW) // node 가 promissing한지 아닌지 확인하는 함수이다.
+										//현재 노드 다음노드부터 남은 item을 모두 추가해도 W보다 작을경우 0을 return한다.
+										//
+{
+	int total = 0;
+
+	for (int i = level + 1; i < 6; i++)
+		total += arr[i];
+
+	return (presentW + arr[level + 1] <= W || presentW == W) && (total + presentW >= W);
+}
+
+void sumofSubset(int level, int preWeight) // sumofSubset을 backtracking을 이용해 구현한 함수이다.
+{
+
+	if (level > 5)
+		return;
+
+	if (promising(level, preWeight))// promissing 한 경우
+	{
+
+		if (preWeight == W)			//전체 Weight와 같을때
+		{
+			printf("%s\n", result);	//결과를 출력한다.
+			return;
+		}
+
+		result[level + 1] = '0' + level + 1 + 1;	 // level +1 노드가 포함되는 경우 노드를 포함하고 count를 올리고 재귀호출을 사용한다.
+		count++;
+		sumofSubset(level + 1, preWeight + arr[level + 1]);
+
+		result[level + 1] = '-';					//level +1 노드가 포함되지 않는 경우 역시 count 를 올리고 재귀호출을 사용한다.
+		count++;
+		sumofSubset(level + 1, preWeight);
+
+
+
+	}
+
+	return;
+}
+
+int main(void)
+{
+
+	exchangeSort(arr, 6);
+	sumofSubset(-1, 0);
+	printf("검사한 노드의 개수 : %d", count);
+
+	return 0;
+}

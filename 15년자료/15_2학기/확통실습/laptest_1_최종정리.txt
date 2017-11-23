@@ -1,0 +1,36 @@
+
+
+leven test 에서의 기호
+F(df1,df2) = a
+H0: homogenity of variance can be assumed.
+H1: homogenity of variance can no be assumed.
+
+leven test > 두 집단끼리 비교가 가능한지 확인하는 것 이므로
+두 data 필요, 
+depend 에 scale , factor 에 nominal 넣음
+
+
+
+
+nomality test
+진행
+analyze -> ds -> explore > plot > check nomality
+K-S, S-W test 에서의 기호
+
+D() 
+H0: nomality can be assumed.
+H1: nomality can not be assumed.
+
+
+correlation test
+H0: r=0
+H1: r!=0
+
+r
+rs
+타우심볼
+
+
+partial correlation
+H0: consider some value, there is no relationship.
+H1: consider some value, there is -----relationship.

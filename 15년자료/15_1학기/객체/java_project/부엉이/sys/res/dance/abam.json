@@ -1,0 +1,468 @@
+{
+  "set":{
+      "look":0,
+      "headangle":0.0,
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0,
+      "leftLeg1angle": 0.0,
+	  "rightLeg1Length": 7,
+	  "rightLeg2Length": 7,
+	  "leftLeg1Length": 7,
+	  "leftLeg2Length": 7
+  },
+  "dance": [
+      {
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": -150.0,
+      "leftArm2angle": -150.0,
+      "rightArm1angle": 150.0,
+      "rightArm2angle": 150.0,
+      "leftLeg2angle": -100.0,
+      "leftLeg1angle": 100.0,
+      "rightLeg2angle": 100.0,
+      "rightLeg1angle": -100.0
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": 150.0,
+      "leftArm2angle": 150.0,
+      "rightArm1angle": -150.0,
+      "rightArm2angle": -150.0,
+      "leftLeg2angle": 100.0,
+      "leftLeg1angle": -100.0,
+      "rightLeg2angle": -100.0,
+      "rightLeg1angle": 100.0
+	},
+	{
+	"time":500,
+      "FPS":60
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": -150.0,
+      "leftArm2angle": -150.0,
+      "rightArm1angle": 150.0,
+      "rightArm2angle": 150.0,
+      "leftLeg2angle": -100.0,
+      "leftLeg1angle": 100.0,
+      "rightLeg2angle": 100.0,
+      "rightLeg1angle": -100.0
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": 150.0,
+      "leftArm2angle": 150.0,
+      "rightArm1angle": -150.0,
+      "rightArm2angle": -150.0,
+      "leftLeg2angle": 100.0,
+      "leftLeg1angle": -100.0,
+      "rightLeg2angle": -100.0,
+      "rightLeg1angle": 100.0
+	},
+	{
+	"time":500,
+      "FPS":60
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": -150.0,
+      "leftArm2angle": -150.0,
+      "rightArm1angle": 150.0,
+      "rightArm2angle": 150.0,
+      "leftLeg2angle": -100.0,
+      "leftLeg1angle": 100.0,
+      "rightLeg2angle": 100.0,
+      "rightLeg1angle": -100.0
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": 150.0,
+      "leftArm2angle": 150.0,
+      "rightArm1angle": -150.0,
+      "rightArm2angle": -150.0,
+      "leftLeg2angle": 100.0,
+      "leftLeg1angle": -100.0,
+      "rightLeg2angle": -100.0,
+      "rightLeg1angle": 100.0
+	},
+	{
+	"time":500,
+      "FPS":60
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": -150.0,
+      "leftArm2angle": -150.0,
+      "rightArm1angle": 150.0,
+      "rightArm2angle": 150.0,
+      "leftLeg2angle": -100.0,
+      "leftLeg1angle": 100.0,
+      "rightLeg2angle": 100.0,
+      "rightLeg1angle": -100.0
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": 150.0,
+      "leftArm2angle": 150.0,
+      "rightArm1angle": -150.0,
+      "rightArm2angle": -150.0,
+      "leftLeg2angle": 100.0,
+      "leftLeg1angle": -100.0,
+      "rightLeg2angle": -100.0,
+      "rightLeg1angle": 100.0
+	},
+	{
+	"time":500,
+      "FPS":60
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": -150.0,
+      "leftArm2angle": -150.0,
+      "rightArm1angle": 150.0,
+      "rightArm2angle": 150.0,
+      "leftLeg2angle": -100.0,
+      "leftLeg1angle": 100.0,
+      "rightLeg2angle": 100.0,
+      "rightLeg1angle": -100.0
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": 150.0,
+      "leftArm2angle": 150.0,
+      "rightArm1angle": -150.0,
+      "rightArm2angle": -150.0,
+      "leftLeg2angle": 100.0,
+      "leftLeg1angle": -100.0,
+      "rightLeg2angle": -100.0,
+      "rightLeg1angle": 100.0
+	},
+	{
+	"time":500,
+      "FPS":60
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": -150.0,
+      "leftArm2angle": -150.0,
+      "rightArm1angle": 150.0,
+      "rightArm2angle": 150.0,
+      "leftLeg2angle": -100.0,
+      "leftLeg1angle": 100.0,
+      "rightLeg2angle": 100.0,
+      "rightLeg1angle": -100.0
+	},
+	{
+    "time":250,
+      "FPS":60,
+     "leftArm1angle": 150.0,
+      "leftArm2angle": 150.0,
+      "rightArm1angle": -150.0,
+      "rightArm2angle": -150.0,
+      "leftLeg2angle": 100.0,
+      "leftLeg1angle": -100.0,
+      "rightLeg2angle": -100.0,
+      "rightLeg1angle": 100.0
+	},
+	{
+	"time":500,
+      "FPS":60
+	},
+	{
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": -60.0,
+      "leftArm2angle": -60.0,
+      "rightArm1angle": 60.0,
+      "rightArm2angle": 60.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+    },
+    {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": -45.0,
+      "leftArm2angle": -45.0,
+      "rightArm1angle": 45.0,
+      "rightArm2angle": 45.0,
+      "leftLeg2angle": -60.0,
+      "leftLeg1angle": 60.0,
+      "rightLeg2angle":	60.0,
+      "rightLeg1angle": -60.0
+
+    },
+     {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 60.0,
+      "leftArm2angle": 60.0,
+      "rightArm1angle": -60.0,
+      "rightArm2angle": -60.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+      
+      
+    },
+    {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 45.0,
+      "leftArm2angle": 45.0,
+      "rightArm1angle": -45.0,
+      "rightArm2angle": -45.0,
+      "leftLeg2angle": 60.0,
+      "leftLeg1angle": -60.0,
+      "rightLeg2angle":	-60.0,
+      "rightLeg1angle": 60.0
+
+    },
+      {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 90.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	0.0,
+      "rightLeg1angle": 0.0
+
+    },
+       {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	-90.0,
+      "rightLeg1angle": 0.0
+
+    },
+         {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": -90.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	0.0,
+      "rightLeg1angle": 0.0
+
+    },
+       {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	90.0,
+      "rightLeg1angle": 0.0
+
+    }
+    ,
+      {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 90.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	0.0,
+      "rightLeg1angle": 0.0
+
+    },
+       {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	-90.0,
+      "rightLeg1angle": 0.0
+
+    },
+         {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": -90.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	0.0,
+      "rightLeg1angle": 0.0
+
+    },
+       {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	90.0,
+      "rightLeg1angle": 0.0
+
+    },
+      {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 90.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	0.0,
+      "rightLeg1angle": 0.0
+
+    },
+       {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	-90.0,
+      "rightLeg1angle": 0.0
+
+    },
+         {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": -90.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	0.0,
+      "rightLeg1angle": 0.0
+    },
+       {
+    "time":200,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle":	90.0,
+      "rightLeg1angle": 0.0
+    },
+    {
+    "time":600,
+      "FPS":60,
+     "leftArm1angle": -480.0,
+      "leftArm2angle": -480.0,
+      "rightArm1angle": 480.0,
+      "rightArm2angle": 480.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+	},
+	{
+	  "time":100,
+      "FPS":60,
+       "rightLeg2Length": 100,
+       "rightLeg1Length": 100,
+       "leftLeg2Length": 100,
+       "leftLeg1Length":100
+	},
+	{
+    "time":600,
+      "FPS":60,
+     "leftArm1angle": 480.0,
+      "leftArm2angle": 480.0,
+      "rightArm1angle": -480.0,
+      "rightArm2angle": -480.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+      
+	},
+	{
+	"time":100,
+      "FPS":60,
+	"rightLeg2Length": -100,
+       "rightLeg1Length": -100,
+       "leftLeg2Length": -100,
+       "leftLeg1Length":-100
+	},
+	{
+    "time":600,
+      "FPS":60,
+     "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 280.0,
+      "rightArm2angle": 280.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+	},
+	{
+	"time":500,
+      "FPS":60
+	},
+	{
+    "time":600,
+      "FPS":60,
+     "leftArm1angle": -90.0,
+      "leftArm2angle": -90.0,
+      "rightArm1angle": -360.0,
+      "rightArm2angle": -360.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+	}
+	
+	
+     
+    
+  ]
+}

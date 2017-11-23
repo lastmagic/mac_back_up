@@ -1,0 +1,23 @@
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+
+int main(void)
+{
+
+	int fd;
+	char *fname= "myfile";
+	
+	fd = open(fname, O_RDWR);
+	if(fd <0)
+	{
+		printf("file open error\n");
+		exit(1);
+	}
+	else
+	{	
+		printf("File Name: %s\nFile Descriptor:%d\n", fname, fd);
+		exit(0);
+	}	
+}

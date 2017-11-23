@@ -1,0 +1,91 @@
+{
+  "set":{
+      "look":0,
+      "headangle":0.0,
+      "leftArm1angle": 45.0,
+      "leftArm2angle": 45.0,
+      "rightArm1angle": 45.0,
+      "rightArm2angle": 45.0,
+      "leftLeg2angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0,
+      "leftLeg1angle": 0.0,
+	  "rightLeg1Length": 7,
+	  "rightLeg2Length": 7,
+	  "leftLeg1Length": 7,
+	  "leftLeg2Length": 7
+  
+  },
+  "dance": [
+    {
+    "time":500,
+      "FPS":60,
+      "headangle":30.0,
+     "leftArm1angle": -120.0,
+      "leftArm2angle": -120.0,
+      "rightArm1angle": -120.0,
+      "rightArm2angle": -120.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+    },
+    {
+    "time":500,
+      "FPS":60,
+      "headangle":-60.0,
+     "leftArm1angle": 120.0,
+      "leftArm2angle": 120.0,
+      "rightArm1angle": 120.0,
+      "rightArm2angle": 120.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+    },
+    {
+    "time":500,
+      "FPS":60,
+      "headangle":60.0,
+     "leftArm1angle": 60.0,
+      "leftArm2angle": 60.0,
+      "rightArm1angle": 60.0,
+      "rightArm2angle": 60.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+    },
+    {
+    "time":500,
+      "FPS":60,
+      "headangle":-60.0,
+     "leftArm1angle": -60.0,
+      "leftArm2angle": -60.0,
+      "rightArm1angle": -60.0,
+      "rightArm2angle": -60.0,
+      "leftLeg2angle": 100.0,
+      "leftLeg1angle": 80.0,
+      "rightLeg2angle": -100.0,
+      "rightLeg1angle": -80.0
+    },
+    {
+    "time":500,
+      "FPS":60,
+      "headangle":60.0,
+     "leftArm1angle": 60.0,
+      "leftArm2angle": 60.0,
+      "rightArm1angle": 60.0,
+      "rightArm2angle": 60.0,
+      "leftLeg2angle": -100.0,
+      "leftLeg1angle": -80.0,
+      "rightLeg2angle": 100.0,
+      "rightLeg1angle": 80.0
+    },
+     {
+    "time":200,
+      "FPS":60
+     }
+    
+  ]
+}

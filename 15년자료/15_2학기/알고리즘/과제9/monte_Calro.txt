@@ -1,0 +1,108 @@
+﻿#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <random>
+#include <ctime>
+#include <iostream>
+#include <functional>
+
+
+using namespace std;
+
+int arr[] = { 0, 2, 10, 13, 17, 22, 42 };
+int W = 52;
+
+
+
+bool promising(int level, int _nowWeight)  // 조건이 promising한지 아닌지검사
+{
+	int total = 0;
+
+	for (int i = level + 1; i < 7; i++)
+		total += arr[i];
+
+	return (_nowWeight + arr[level + 1] <= W || _nowWeight == W) && (total + _nowWeight >= W);
+}
+
+char result[10] = "";
+
+int countChild = 0;
+
+int estimate_sum_of_subsetS(int level)
+{
+	int i, j;
+	int m, mprod, numnods;
+
+	int weight = 0;
+
+	int prom_children[100] = { 0 };
+	int selected[100] = { 0 };
+
+	i = 0, numnods = 1; m = 1; mprod = 1;
+
+	while (m != 0 && i != level)
+	{
+		mprod = mprod*m;
+		numnods = numnods + mprod * 2;
+
+		i++; m = 0; memset(prom_children, 0, sizeof(int) * 100);  // child 에 있는 원소 초기화
+		countChild = 0;
+
+		for (j = 0; j < 2; j++)   // 노드 개수는 항상 2개임으로 루프는 2번 0일때는 추가하는 경우 1일때는 
+		{
+			int weighttemp = weight;
+
+			if (j == 0)
+			{
+				weighttemp = weight + arr[i];
+			}
+			else
+			{
+				weighttemp = weight;
+			}
+
+
+			if (promising(i, weighttemp))  // 프로미싱하면?
+			{
+				m++;
+				prom_children[countChild++] = j;  //child에 추가
+			}
+
+
+		}
+
+
+		if (m != 0)
+		{
+
+			int temp = rand() % countChild;   // 랜덤한 수 생성
+
+			if (prom_children[temp] == 0)      // 0이면 왼쪽자식
+			{
+				weight = weight + arr[i];
+			}
+			else if (prom_children[temp] == 1)  // 1이면 오른쪽 자식
+			{
+				weight = weight;
+			}
+		}
+	}
+
+	return numnods;
+
+}
+
+
+int main()
+{
+	int sum = 0;
+	for (int i = 0; i < 20; i++){
+		printf("찾은 노드의 총 개수 : %d\n", estimate_sum_of_subsetS(7));
+		sum += estimate_sum_of_subsetS(7);
+	}
+	sum = sum / 20;
+	printf("20번 반복후 결과의 평균:%d",sum);
+	return 0;
+}

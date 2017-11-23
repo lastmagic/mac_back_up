@@ -1,0 +1,133 @@
+?7c6efb1a-f668-4c2c-a6ae-b7b68bbbcb01s?
+import numpy #import to use numpy package
+from numpy import * #import everything in numpy
+# Problem 1:
+# input data
+# [Time ][1900 ,1910 ,1920 ,1930 ,1940, 1950, 1960, 1970, 1980, 1990 ]
+# [Signal Strength][75.996 ,91.972 ,5.5 ,3.4, 3.0]
+# approximate with : y=f(t)=a+b*t+c*t*t
+A0 = numpy.ones((1,10)) #create matrix (1x5) of scalar 1
+A3 = numpy.matrix([1900,1910,1920,1930 ,1940, 1950, 1960, 1970, 1980, 1990],dtype=float)
+A4 = numpy.matrix([1900**2,1910**2,1920**2,1930**2 ,1940**2, 1950**2, 1960**2, 1970**2, 1980**2, 1990**2],dtype=float)
+#create data matrix t(1x10)
+A1=A3 #matrix t(1x10)
+A2=A4 #matrix t*t (1x10)
+A=concatenate((A0,A1,A2)) #combine A0, A1, A2 into A
+A=A.T
+Y = matrix([75.996 ,91.972 ,105.711 ,122.755, 131.669,150.697,179.323,203.185,226.546,248.71],dtype=float)
+#create data matrix Y(1x5)
+Y=Y.T #transpose of Y
+X=linalg.inv(A.T*A)*A.T*Y #calculate suitable set of [c,b,a]
+print "Coefficients = "
+print X
+print "Y = "
+print Y
+print "A = "
+print A
+plot(X[0,0]+X[1,0]*x+X[2,0]*x*x, (x,1900,1990)) +list_plot(zip(A3.T,Y))
+#plot the approximate curve and data points
+# Problem 2:
+# Problem 3:
+?e1ea06db-c3ab-4133-b3f0-0ff1d656188c?{"stdout":"Coefficients = \n"}?{"stdout":"[[  3.08946677e+04]\n [ -3.35407835e+01]\n [  9.11659090e-03]]\n"}?{"stdout":"Y = \n"}?{"stdout":"[[  75.996]\n [  91.972]\n [ 105.711]\n [ 122.755]\n [ 131.669]\n [ 150.697]\n [ 179.323]\n [ 203.185]\n [ 226.546]\n [ 248.71 ]]\n"}?{"stdout":"A = \n"}?{"stdout":"[[  1.00000000e+00   1.90000000e+03   3.61000000e+06]\n [  1.00000000e+00   1.91000000e+03   3.64810000e+06]\n [  1.00000000e+00   1.92000000e+03   3.68640000e+06]\n [  1.00000000e+00   1.93000000e+03   3.72490000e+06]\n [  1.00000000e+00   1.94000000e+03   3.76360000e+06]\n [  1.00000000e+00   1.95000000e+03   3.80250000e+06]\n [  1.00000000e+00   1.96000000e+03   3.84160000e+06]\n [  1.00000000e+00   1.97000000e+03   3.88090000e+06]\n [  1.00000000e+00   1.98000000e+03   3.92040000e+06]\n [  1.00000000e+00   1.99000000e+03   3.96010000e+06]]\n"}?{"once":false,"file":{"show":true,"uuid":"fe7f1bf4-ee1e-4e29-99ef-0fb843027630","filename":"/projects/07a17c14-df0d-4969-8d7b-6f9f68ea6e4f/.sage/temp/compute1-us/27714/tmp_XQvvYu.svg"}}?{"html":"<div align='center'></div>"}?
+?82121d6f-a4b5-42f3-98c5-d8ab7dff97e1?
+
+
+
+
+
+
+
+
+?7c6efb1a-f668-4c2c-a6ae-b7b68bbbcb01s?
+import numpy #import to use numpy package
+from numpy import * #import everything in numpy
+# Problem 1:
+# input data
+# [Time ][1900 ,1910 ,1920 ,1930 ,1940, 1950, 1960, 1970, 1980, 1990 ]
+# [Signal Strength][75.996 ,91.972 ,5.5 ,3.4, 3.0]
+# approximate with : y=f(t)=a+b*t+c*t*t
+A0 = numpy.ones((1,11)) #create matrix (1x5) of scalar 1
+A5 = numpy.matrix([-2,-1.5,-1,-0.5,0, 0.5, 1, 1.5, 2, 2.5, 3],dtype=float)
+A6 = numpy.matrix([-2*2,-1.5*2,-1*2,-0.5*2,0*2, 0.5*2, 1*2, 1.5*2, 2*2, 2.5*2, 3*2],dtype=float)
+#create data matrix t(1x11)
+A1=sin(A5) #matrix sin(t)(1x11)
+A2=cos(A5) #matrix cos(t) (1x11)
+A3=sin(A6)
+A4=cos(A6)
+A=concatenate((A0,A1,A2,A3,A4)) #combine A0, A1, A2 into A
+A=A.T
+Y = matrix([-6.32,-3.23,1.62,3.13,1.74,-0.75,-1.41,1.78,8.88,9.98,7.1],dtype=float)
+#create data matrix Y(1x5)
+Y=Y.T #transpose of Y
+X=linalg.inv(A.T*A)*A.T*Y #calculate suitable set of [c,b,a]
+print "Coefficients = "
+print X
+print "Y = "
+print Y
+print "A = "
+print A
+plot(X[0,0]+X[1,0]*sin(x)+X[2,0]*cos(x)+X[3,0]*sin(2*x)+X[4,0]*cos(2*x), (x,-2,3)) +list_plot(zip(A5.T,Y))
+#plot the approximate curve and data points
+# Problem 2:
+# Problem 3:
+?c1d072e5-ed65-466b-b067-ca5b23cb2095?{"stdout":"Coefficients = \n"}?{"stdout":"[[ 1.58149099]\n [ 3.68501522]\n [-1.63163491]\n [-4.94827208]\n [ 1.91229461]]\n"}?{"stdout":"Y = \n"}?{"stdout":"[[-6.32]\n [-3.23]\n [ 1.62]\n [ 3.13]\n [ 1.74]\n [-0.75]\n [-1.41]\n [ 1.78]\n [ 8.88]\n [ 9.98]\n [ 7.1 ]]\n"}?{"stdout":"A = \n"}?{"stdout":"[[ 1.         -0.90929743 -0.41614684  0.7568025  -0.65364362]\n [ 1.         -0.99749499  0.0707372  -0.14112001 -0.9899925 ]\n [ 1.         -0.84147098  0.54030231 -0.90929743 -0.41614684]\n [ 1.         -0.47942554  0.87758256 -0.84147098  0.54030231]\n [ 1.          0.          1.          0.          1.        ]\n [ 1.          0.47942554  0.87758256  0.84147098  0.54030231]\n [ 1.          0.84147098  0.54030231  0.90929743 -0.41614684]\n [ 1.          0.99749499  0.0707372   0.14112001 -0.9899925 ]\n [ 1.          0.90929743 -0.41614684 -0.7568025  -0.65364362]\n [ 1.          0.59847214 -0.80114362 -0.95892427  0.28366219]\n [ 1.          0.14112001 -0.9899925  -0.2794155   0.96017029]]\n"}?{"once":false,"file":{"show":true,"uuid":"92d0e719-1f23-47ca-91c1-7b309d1e762c","filename":"/projects/07a17c14-df0d-4969-8d7b-6f9f68ea6e4f/.sage/temp/compute1-us/20242/tmp_FAV5YS.svg"}}?{"html":"<div align='center'></div>"}?
+?82121d6f-a4b5-42f3-98c5-d8ab7dff97e1?
+?fef6e373-0121-443b-b837-94c64dbf85d3?
+?36fb804c-03b2-43ff-8fb8-26beab7ab8eb?
+
+
+
+
+
+
+
+
+
+?7c6efb1a-f668-4c2c-a6ae-b7b68bbbcb01s?
+import numpy #import to use numpy package
+from numpy import * #import everything in numpy
+# Problem 1:
+# input data
+# [Time ][1900 ,1910 ,1920 ,1930 ,1940, 1950, 1960, 1970, 1980, 1990 ]
+# [Signal Strength][75.996 ,91.972 ,5.5 ,3.4, 3.0]
+# approximate with : y=f(t)=a+b*t+c*t*t
+A0 = numpy.ones((1,4)) #create matrix (1x5) of scalar 1
+A3 = numpy.matrix([1,2,3,4],dtype=float)
+A4 = numpy.matrix([1900**2,1910**2,1920**2,1930**2 ,1940**2, 1950**2, 1960**2, 1970**2, 1980**2, 1990**2],dtype=float)
+#create data matrix t(1x10)
+A1=A3 #matrix t(1x10)
+
+A=concatenate((A0,A1)) #combine A0, A1, A2 into A
+A=A.T
+Y = matrix([log(2.5),log(8),log(19.9),log(50)],dtype=float)
+
+
+#create data matrix Y(1x5)
+Y=Y.T #transpose of Y
+X=linalg.inv(A.T*A)*A.T*Y #calculate suitable set of [c,b,a]
+X[0,0]= exp(X[0,0])
+Y = [2.5,8,19.9,50]
+print "Coefficients = "
+print X
+print "Y = "
+print Y
+print "A = "
+print A
+plot((X[0,0]+e^(X[1,0]*x)), (x,1,4)) +list_plot(zip(A3.T,Y))
+#plot the approximate curve and data points
+# Problem 2:
+# Problem 3:
+?83569e1c-20b5-4f42-a9f3-a3704f6ed28d?{"stdout":"Coefficients = \n"}?{"stdout":"[[ 1.       ]\n [ 0.9898475]]\n"}?{"stdout":"Y = \n"}?{"stdout":"[2.50000000000000, 8, 19.9000000000000, 50]\n"}?{"stdout":"A = \n"}?{"stdout":"[[ 1.  1.]\n [ 1.  2.]\n [ 1.  3.]\n [ 1.  4.]]\n"}?{"once":false,"file":{"show":true,"uuid":"cc9e2702-9dfe-4cc7-bc07-fe2c9aad559f","filename":"/projects/07a17c14-df0d-4969-8d7b-6f9f68ea6e4f/.sage/temp/compute1-us/1753/tmp_WKFQe5.svg"}}?{"html":"<div align='center'></div>"}?
+?82121d6f-a4b5-42f3-98c5-d8ab7dff97e1?
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1172 @@
+package com.example.hw_ttt;
+
+import android.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
+
+    FragmentManager fm= getFragmentManager();
+    Button b11;
+    Button b12;
+    Button b13;
+    Button b14;
+    Button b15;
+    Button b21;
+    Button b22;
+    Button b23;
+    Button b24;
+    Button b25;
+    Button b31;
+    Button b32;
+    Button b33;
+    Button b34;
+    Button b35;
+    Button b41;
+    Button b42;
+    Button b43;
+    Button b44;
+    Button b45;
+    Button b51;
+    Button b52;
+    Button b53;
+    Button b54;
+    Button b55;
+    TextView textView;
+    int noWinner=0;
+    boolean turn =false;
+    boolean checkO[] = new boolean[25];
+    boolean checkX[] = new boolean[25];
+
+
+//府胶呈 付促 静扁 塞甸绢辑 父靛妨绊 沁带 窃荐, final阑 罐酒具窍绰 巩力痢父 荐沥且 荐 乐绰瘤 舅酒焊磊.
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+
+
+        for(int i=0; i<25; i++){
+            checkO[i] = false;
+            checkX[i] = false;
+        }
+        b11 = (Button)findViewById(R.id.button11);
+        b12 = (Button)findViewById(R.id.button12);
+        b13 = (Button)findViewById(R.id.button13);
+        b14 = (Button)findViewById(R.id.button14);
+        b15 = (Button)findViewById(R.id.button15);
+        b21 = (Button)findViewById(R.id.button21);
+        b22 = (Button)findViewById(R.id.button22);
+        b23 = (Button)findViewById(R.id.button23);
+        b24 = (Button)findViewById(R.id.button24);
+        b25 = (Button)findViewById(R.id.button25);
+        b31 = (Button)findViewById(R.id.button31);
+        b32 = (Button)findViewById(R.id.button32);
+        b33 = (Button)findViewById(R.id.button33);
+        b34 = (Button)findViewById(R.id.button34);
+        b35 = (Button)findViewById(R.id.button35);
+        b41 = (Button)findViewById(R.id.button41);
+        b42 = (Button)findViewById(R.id.button42);
+        b43 = (Button)findViewById(R.id.button43);
+        b44 = (Button)findViewById(R.id.button44);
+        b45 = (Button)findViewById(R.id.button45);
+        b51 = (Button)findViewById(R.id.button51);
+        b52 = (Button)findViewById(R.id.button52);
+        b53 = (Button)findViewById(R.id.button53);
+        b54 = (Button)findViewById(R.id.button54);
+        b55 = (Button)findViewById(R.id.button55);
+        final ArrayList<Button> ButtonArray =new ArrayList<Button>();
+        ButtonArray.add(b11);
+        ButtonArray.add(b12);
+        ButtonArray.add(b13);
+        ButtonArray.add(b14);
+        ButtonArray.add(b15);
+        ButtonArray.add(b21);
+        ButtonArray.add(b22);
+        ButtonArray.add(b23);
+        ButtonArray.add(b24);
+        ButtonArray.add(b25);
+        ButtonArray.add(b31);
+        ButtonArray.add(b32);
+        ButtonArray.add(b33);
+        ButtonArray.add(b34);
+        ButtonArray.add(b35);
+        ButtonArray.add(b41);
+        ButtonArray.add(b42);
+        ButtonArray.add(b43);
+        ButtonArray.add(b44);
+        ButtonArray.add(b45);
+        ButtonArray.add(b51);
+        ButtonArray.add(b52);
+        ButtonArray.add(b53);
+        ButtonArray.add(b54);
+        ButtonArray.add(b55);
+
+
+
+
+        ButtonArray.get(0).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(0).setBackgroundResource(R.drawable.o);
+                    checkO[0] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm,"CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(0).setBackgroundResource(R.drawable.x);
+                    checkX[0] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm,"CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(1).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(1).setBackgroundResource(R.drawable.o);
+                    checkO[1] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(1).setBackgroundResource(R.drawable.x);
+                    checkX[1] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(2).setBackgroundResource(R.drawable.o);
+                    checkO[2] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(2).setBackgroundResource(R.drawable.x);
+                    checkX[2] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(1).setBackgroundResource(R.drawable.o);
+                    checkO[3] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(3).setBackgroundResource(R.drawable.x);
+                    checkX[3] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(4).setBackgroundResource(R.drawable.o);
+                    checkO[4] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(4).setBackgroundResource(R.drawable.x);
+                    checkX[4] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(5).setBackgroundResource(R.drawable.o);
+                    checkO[5] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(5).setBackgroundResource(R.drawable.x);
+                    checkX[5] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(6).setBackgroundResource(R.drawable.o);
+                    checkO[6] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(6).setBackgroundResource(R.drawable.x);
+                    checkX[6] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(7).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(7).setBackgroundResource(R.drawable.o);
+                    checkO[7] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(7).setBackgroundResource(R.drawable.x);
+                    checkX[7] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(8).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(8).setBackgroundResource(R.drawable.o);
+                    checkO[8] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(8).setBackgroundResource(R.drawable.x);
+                    checkX[8] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(9).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(9).setBackgroundResource(R.drawable.o);
+                    checkO[9] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(9).setBackgroundResource(R.drawable.x);
+                    checkX[9] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(10).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(10).setBackgroundResource(R.drawable.o);
+                    checkO[10] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(10).setBackgroundResource(R.drawable.x);
+                    checkX[10] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(11).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(11).setBackgroundResource(R.drawable.o);
+                    checkO[11] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(11).setBackgroundResource(R.drawable.x);
+                    checkX[11] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(12).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(12).setBackgroundResource(R.drawable.o);
+                    checkO[12] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(12).setBackgroundResource(R.drawable.x);
+                    checkX[12] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(13).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(13).setBackgroundResource(R.drawable.o);
+                    checkO[13] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(13).setBackgroundResource(R.drawable.x);
+                    checkX[13] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(14).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(14).setBackgroundResource(R.drawable.o);
+                    checkO[14] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(14).setBackgroundResource(R.drawable.x);
+                    checkX[14] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(15).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(15).setBackgroundResource(R.drawable.o);
+                    checkO[15] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(15).setBackgroundResource(R.drawable.x);
+                    checkX[15] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(16).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(16).setBackgroundResource(R.drawable.o);
+                    checkO[16] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(16).setBackgroundResource(R.drawable.x);
+                    checkX[16] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(17).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(17).setBackgroundResource(R.drawable.o);
+                    checkO[17] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(17).setBackgroundResource(R.drawable.x);
+                    checkX[17] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(18).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(18).setBackgroundResource(R.drawable.o);
+                    checkO[18] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(18).setBackgroundResource(R.drawable.x);
+                    checkX[18] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(19).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(19).setBackgroundResource(R.drawable.o);
+                    checkO[19] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(19).setBackgroundResource(R.drawable.x);
+                    checkX[19] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(20).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(20).setBackgroundResource(R.drawable.o);
+                    checkO[20] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(20).setBackgroundResource(R.drawable.x);
+                    checkX[20] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(21).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(21).setBackgroundResource(R.drawable.o);
+                    checkO[21] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(21).setBackgroundResource(R.drawable.x);
+                    checkX[21] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(22).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(22).setBackgroundResource(R.drawable.o);
+                    checkO[22] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(22).setBackgroundResource(R.drawable.x);
+                    checkX[22] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(23).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(23).setBackgroundResource(R.drawable.o);
+                    checkO[23] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(23).setBackgroundResource(R.drawable.x);
+                    checkX[23] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+        ButtonArray.get(24).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (turn == false) {
+                    ButtonArray.get(24).setBackgroundResource(R.drawable.o);
+                    checkO[24] = true;
+                    turn = true;
+                    noWinner++;
+
+                    if (check(checkO) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                } else {
+                    ButtonArray.get(24).setBackgroundResource(R.drawable.x);
+                    checkX[24] = true;
+                    turn = false;
+                    noWinner++;
+
+                    if (check(checkX) == true) {
+                        //stop event 贸府
+                        customD cd = new customD();
+                        cd.show(fm, "CustomDialog");
+                    }
+                    else if(noWinner==25){
+                        basicD bd = new basicD();
+                        bd.show(fm,"BasicDialog");
+                    }
+                }
+            }
+        });
+    }
+
+    public boolean check(boolean check[]){// winner啊 乐绰瘤 魄窜窍绰 窃荐, 啊肺 技肺 剧率 措阿急 醚 4啊瘤 纳捞胶甫 备喊窍咯 备己.
+        for(int i=0; i<5; i++){
+            if(check[i]==true&&check[i+5]==true&&check[i+10]==true&&check[i+15]==true&&check[i+20]==true) {//技肺
+                return true;
+            }
+        }
+
+           int i=4;
+            if(check[i]==true&&check[i+4]==true&&check[i+8]==true&&check[i+12]==true&&check[i+16]==true){//剧狼规氢 措阿急
+                return true;
+            }
+
+        for(i=0; i<1;i++){
+            if(check[i]==true&&check[i+6]==true&&check[i+12]==true&&check[i+18]==true&&check[i+24]==true){//澜狼规氢 措阿急
+                return true;
+            }
+        }
+        for(i=0; i<5; i++){
+
+            if(check[5*i]==true&&check[5*i+1]==true&&check[5*i+2]==true&&check[5*i+3]==true&&check[5*i+4]==true){//啊肺
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void ifElse(boolean a, boolean O[], boolean X[], int index){
+        if(a == false){
+            O[index]= true;
+            if(check(O)==true){
+
+            }
+
+        }
+        else{
+            X[index]=true;
+            if(check(X)==true){
+
+            }
+        }
+    }
+
+    public void fullFuction(){
+        if (turn == false) {
+            ButtonArray.get(24).setBackgroundResource(R.drawable.o);
+            checkO[24] = true;
+            turn = true;
+            noWinner++;
+
+            if (check(checkO) == true) {
+                //stop event 贸府
+                customD cd = new customD();
+                cd.show(fm, "CustomDialog");
+            }
+            else if(noWinner==25){
+                basicD bd = new basicD();
+                bd.show(fm,"BasicDialog");
+            }
+        } else {
+            ButtonArray.get(24).setBackgroundResource(R.drawable.x);
+            checkX[24] = true;
+            turn = false;
+            noWinner++;
+
+            if (check(checkX) == true) {
+                //stop event 贸府
+                customD cd = new customD();
+                cd.show(fm, "CustomDialog");
+            }
+            else if(noWinner==25){
+                basicD bd = new basicD();
+                bd.show(fm,"BasicDialog");
+            }
+        }
+    }
+    
+    public void CaseTrue(int index){
+        checkO[index] = true;
+        turn = true;
+        noWinner++;
+
+        if (check(checkO) == true) {
+            //stop event 贸府
+            customD cd = new customD();
+            cd.show(fm, "CustomDialog");
+        }
+        else if(noWinner==25){
+            basicD bd = new basicD();
+            bd.show(fm,"BasicDialog");
+        }
+    }
+    public void CaseFalse(int index){
+        checkX[index] = true;
+        turn = false;
+        noWinner++;
+
+        if (check(checkX) == true) {
+            //stop event 贸府
+            customD cd = new customD();
+            cd.show(fm, "CustomDialog");
+        }
+        else if(noWinner==25){
+            basicD bd = new basicD();
+            bd.show(fm,"BasicDialog");
+        }
+    }
+//View.OnClickListener listenr = new View.OnClickListener() {
+//    @Override
+//    public void onClick(View v) {
+//
+//        if (turn == false) {
+//            v.setBackgroundResource(R.drawable.o);
+//
+//            checkO[v.getId()] = true;
+//            turn = true;
+//            if (check(checkO) == true) {
+//                //stop event 贸府
+//                textView.setText("Winner is O");
+//            }
+//        } else {
+//            v.setBackgroundResource(R.drawable.x);;
+//            checkX[v.getId()] = true;
+//            turn = false;
+//            if (check(checkX) == true) {
+//                //stop event 贸府
+//                textView.setText("Winner is X");
+//            }
+//        }
+//    }
+//}
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
+
+

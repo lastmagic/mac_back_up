@@ -1,0 +1,178 @@
+package Mid;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class test {
+
+	public static void main(String []args)
+	{
+		boolean exist=false;
+		boolean move=false; 
+		int array[][] = new int[3][3];
+		Scanner in;
+		in = new Scanner(System.in);
+		int r=-1;
+		int c=-1;
+		int g=-1;
+		Random getR = new Random();
+		r = getR.nextInt(2);
+		c = getR.nextInt(2);
+		Three t = new Three(3);
+		printBoard b = new printBoard();
+		t.Computer();
+		b.print(t.getArray());
+		
+//		b.print(t.getArray());
+//		b.print(f.getArray());
+//		b.print(e.getArray());
+//		move = t.movePossible(2, 2);
+//		if(move)
+//			t.check(2, 2);
+//		else
+//			System.out.println("You insert wrong number");
+//		b.print(t.getArray());
+//		t.check(0, 1);
+//		b.print(t.getArray());
+//		t.check(2, 0);
+//		b.print(t.getArray());
+		
+		
+		
+		
+		
+		
+		
+		
+		//--------------------------------------------------------여기 부터 user 모드
+		t.check(r, c);
+		
+		while(!t.Success())
+		{	
+			if(t.fail(r, c))
+			{
+				System.out.println("Fail");
+				break;
+			}
+			
+			System.out.println();
+			System.out.println();
+			System.out.println("-------------------------------------");
+			
+			b.print(t.getArray());
+			
+			System.out.println("-------------------------------------");
+			System.out.println();
+			System.out.println();
+			System.out.println("Input your number");
+			System.out.println("  7  0  ");
+			System.out.println(" 6    1 ");
+			System.out.println(" 5    2 ");
+			System.out.println("  4  3  ");
+			System.out.println("-------------------------------------");
+			g = in.nextInt();
+			
+			switch (g){
+			case 0:
+				move = t.movePossible(r-2, c+1);
+				if(move)
+				{
+					r = r-2;
+					c = c+1;
+					t.check(r, c);
+				}
+				else
+					System.out.println("Wrong Number");
+				break;
+			case 1:
+				move = t.movePossible(r-1, c+2);
+				if(move)
+				{
+					r = r-1;
+					c = c+2;
+					t.check(r, c);
+				}
+				else
+					System.out.println("Wrong Number");
+				break;
+			case 2:
+				move = t.movePossible(r+1, c+2);
+				if(move)
+				{
+					r = r+1;
+					c = c+2;
+					t.check(r, c);
+				}
+				else
+					System.out.println("Wrong Number");
+				break;
+			case 3:
+				move = t.movePossible(r+2, c+1);
+				if(move)
+				{
+					r = r+2;
+					c = c+1;
+					t.check(r, c);
+				}
+				else
+					System.out.println("Wrong Number");
+				break;
+			case 4:
+				move = t.movePossible(r+2, c-1);
+				if(move)
+				{
+					r = r+2;
+					c = c-1;
+					t.check(r, c);
+					
+				}
+				else
+					System.out.println("Wrong Number");
+				break;
+			case 5:
+				move = t.movePossible(r+1, c-2);
+				if(move)
+				{
+					r = r+1;
+					c = c-2;
+					t.check(r, c);
+				}
+				else
+					System.out.println("Wrong Number");
+				break;
+			case 6:
+				move = t.movePossible(r-1, c-2);
+				if(move)
+				{
+					r = r-1;
+					c = c-2;
+					t.check(r, c);
+				}
+				else
+					System.out.println("Wrong Number");
+				break;
+			case 7:
+				move = t.movePossible(r-2, c-1);
+				if(move)
+				{
+					r = r-2;
+					c = c-1;
+					t.check(r, c);
+				}
+				else
+					System.out.println("Wrong Number");
+				break;
+			}
+				
+				
+		}
+		b.print(t.getArray());
+		if(t.Success())
+			System.out.println("Success! GAME OVER");
+		else
+		{
+			System.out.println("You failed to this round");
+			System.out.println("You move "+t.getCnt()+"  times");
+		}
+		}	
+}

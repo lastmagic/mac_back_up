@@ -1,0 +1,46 @@
+System 구성
+
+필요 객체
+
+Matritx
+
+
+matrix 구성 객체 필요?
+
+row 객체 구성 시 더 편리할듯
+
+rpos 변수 필요
+
+row
+{
+	int row[10];
+	int rpos;	
+}
+
+row 구성 시 guses elimination 설정 필요
+method 로 구성 하는게 나을 듯 함.
+
+
+출력 요구사항
+
+L , U, P , X값 구성
+
+각각의 matrix 구성을 위해 n개의 low 객체 필요
+
+즉 matrix 에 row Mat[n];선언
+
+
+Row > 
+
+checkPivot	
+gauseE 
+
+
+Lower triangle matrix 만드는 과정이 없음
+Row.rpos == pivot
+
+
+Matrix >
+
+doP
+

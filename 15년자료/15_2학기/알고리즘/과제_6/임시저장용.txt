@@ -1,0 +1,161 @@
+#include <stdio.h>
+using namespace std;
+const int N = 10;
+const int a = 0xFFFF / 2;
+
+class DS //Disjoint set 을 구현하기위한 class (adt)이다. 교재와 동일하게 클래스를 포인트하는 포인터 2개와 index변수를 private로 가지고있고,
+	//initial, find, merge, equal 함수를 가지고 있다.
+{
+private: int index;
+		 DS* parent;
+
+
+public:
+	void initial(int n){
+	
+		
+	
+	};
+	DS * find(int i){
+		
+		for (DS *temp = this; temp->parent != NULL; temp = temp->parent){
+			if (temp->index == i){
+				return temp;
+			}
+			
+		}
+	
+	};
+	void merge(DS *q){
+	
+		for (DS *temp = this; temp->parent != NULL; temp = temp->parent){
+			if (temp->parent->parent == NULL){
+				temp->parent->parent = q;
+			}
+		}
+		
+	};
+	bool equal(DS *q){
+	
+		for (DS *temp = this; temp->parent != NULL; temp = temp->parent){
+			if ((temp == q)|| (temp->parent == q)){
+				return true;
+			}
+		}
+		return false;
+	};
+};
+void printArray(int array[][N]){ // Array 내용 확인 및 과정을 보기위한 출력 함수이다.
+	printf("인접행렬:\n");
+	for (int i = 0; i < N; i++){
+		for (int j = 0; j < N; j++){
+			if (array[i][j] == a){
+				printf(" INF |");
+			}
+			else{
+			printf(" %d |", array[i][j]);
+			}
+		}
+		printf("\n");
+	}
+}
+
+void kruskal(){ //교재와 동이랗ㄴ 방법으로 구현한 kruskal 알고리즘이다. 중간과정을 위해 sort를 사용하였다.
+
+}
+void prim(int n, int W[][N], int F[][N]){ // 교재와 동일한 방법으로 구성한 prim 알고리즘이다. edge를 위한 F변수를 인접행렬로 바꾸어
+	// 실제 출력시 MST를 인접행렬로 출력하는 방법을 사용하였다.
+	
+	int index, vnear, min, e;
+	int nearest[N], distance[N];
+
+	for (int i = 1; i < N; i++){ //초기화
+		nearest[i] = 0;
+		distance[i] = W[0][i];
+	}
+
+	for (int j = 0; j < N - 1; j++){ // 가장 가까운 vertex의 index를 구하는 과정이다.
+		min = 0xFFFF / 2;
+		for (int i = 1; i < N; i++){
+			if (0 <= distance[i]&& distance[i]<= min){
+				min = distance[i];
+				vnear = i;
+			}
+		}
+
+		
+		F[vnear][nearest[vnear]] = W[vnear][nearest[vnear]]; // 찾아낸 index를 이용하여 W에 있는 edge를 F 배열에 저장한다.
+		F[nearest[vnear]][vnear] = W[nearest[vnear]][vnear];
+		printf("과정:%d\n", j);
+		printArray(F);
+		distance[vnear] = -1;
+		for (int i = 1; i < n; i++){  
+			if (W[i][vnear] < distance[i]){
+				distance[i] = W[i][vnear];
+				nearest[i] = vnear;
+			}
+		}
+		
+	}
+}
+
+void primR(int n, int W[][N], int F[][N]){ // 위의 prim과 동일한 방법으로 구현한 함수이다. index의 접근을 인접행렬의 가장 마지막 
+	//index부터 시작하는 것이 특징이다.
+
+	int index, vnear, min, e;
+	int nearest[N], distance[N];
+
+	for (int i = n-1; i >= 0; i--){
+		nearest[i] = n-1;
+		distance[i] = W[n-1][i];
+	}
+
+	for (int j = 0; j < n - 1; j++){
+		min = 0xFFFF / 2;
+		for (int i = n-1; i>=0; i--){
+			if (0 < distance[i] && distance[i] <= min){
+				min = distance[i];
+				vnear = i;
+			}
+		}
+
+
+		F[vnear][nearest[vnear]] = W[vnear][nearest[vnear]];
+		F[nearest[vnear]][vnear] = W[nearest[vnear]][vnear];
+		printf("과정:%d\n", j);
+		printArray(F);
+		distance[vnear] = -1;
+		for (int i = n-1; i >=0; i--){
+			if (W[i][vnear] < distance[i]){
+				distance[i] = W[i][vnear];
+				nearest[i] = vnear;
+			}
+		}
+
+	}
+}
+
+
+int main(void) {
+	
+	int T[][N] = { 0, 32, a, 17, a, a, a, a, a, a, // 과제에서 주어진 graph를 인접행렬을 이용해 초기화 한 배열이다.
+		32, 0, a, a, 45, a, a, a, a, a,
+		a, a, 0, 18, a, a, 5, a, a, a,
+		17, a, 18, 0, 10, a, a, 3, a, a,
+		a, 45, a, 10, 0, 28, a, a, 25, a,
+		a, a, a, a, 28, 0, a, a, a, 6,
+		a, a, 5, a, a, a, 0, 59, a, a,
+		a, a, a, 3, a, a, 59, 0, 4, a,
+		a, a, a, a, 25, a, a, 4, 0, 12,
+		a, a, a, a, a, 6, a, a, 12, 0 };
+	int F[N][N]; // MST를 저장할 인접행렬이다.
+	for (int i = 0; i < N; i++){
+		for (int j = 0; j < N; j++){
+			F[i][j] = a;
+		}
+	}
+	printArray(T);
+	primR(N, T, F);
+	//prim(N, T, F);
+	return 0;
+}

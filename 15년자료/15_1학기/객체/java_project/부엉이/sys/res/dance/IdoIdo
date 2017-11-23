@@ -1,0 +1,888 @@
+{
+  "delay": 50,
+  "dance": [
+    {
+      "look":0,
+      "headangle":0.0,
+      "leftArm1angle": -90.0,
+      "leftArm2angle": 90.0,
+      "rightArm1angle": 90.0,
+      "rightArm2angle": -90.0,
+      "leftLeg2angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0,
+      "leftLeg1angle": 0.0
+    },
+    {
+      "leftArm1angle": -80.0,
+      "leftArm2angle": 120.0,
+      "rightArm1angle": 80.0,
+      "rightArm2angle": -120.0
+    },
+    {
+      "leftArm1angle": -70.0,
+      "leftArm2angle": 150.0,
+      "rightArm1angle": 70.0,
+      "rightArm2angle": -150.0
+    },
+    {
+      "leftArm1angle": -60.0,
+      "leftArm2angle": 180.0,
+      "rightArm1angle": 60.0,
+      "rightArm2angle": -180.0
+    },
+    {
+      "leftArm1angle": -50.0,
+      "leftArm2angle": 210.0,
+      "rightArm1angle": 50.0,
+      "rightArm2angle": -210.0
+    },
+    {
+      "leftArm1angle": -40.0,
+      "leftArm2angle": 240.0,
+      "rightArm1angle": 40.0,
+      "rightArm2angle": -240.0
+    },
+    {
+      "leftArm1angle": -30.0,
+      "leftArm2angle": 270.0,
+      "rightArm1angle": 30.0,
+      "rightArm2angle": -270.0
+    },
+    {
+      "leftArm1angle": -20.0,
+      "leftArm2angle": 300.0,
+      "rightArm1angle": 20.0,
+      "rightArm2angle": -300.0
+    },
+      {
+      "leftArm1angle": -10.0,
+      "leftArm2angle": 330.0,
+      "rightArm1angle": 10.0,
+      "rightArm2angle": -330.0
+    },
+    {
+      "headangle":10.0,
+      "leftLeg1angle":10.0,
+      "leftLeg2angle":-10.0,
+      "rightLeg1angle":10.0,
+      "rightLeg2angle":-10.0,
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "headangle":20.0,
+      "leftLeg1angle":20.0,
+      "leftLeg2angle":-10.0,
+      "rightLeg1angle":10.0,
+      "rightLeg2angle":-10.0,
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 10.0,
+      "leftArm2angle": 10.0,
+      "rightArm1angle": -10.0,
+      "rightArm2angle": -10.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": -10.0,
+      "leftArm2angle": -10.0,
+      "rightArm1angle": 10.0,
+      "rightArm2angle": 10.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 10.0,
+      "leftArm2angle": 10.0,
+      "rightArm1angle": -10.0,
+      "rightArm2angle": -10.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": -10.0,
+      "leftArm2angle": -10.0,
+      "rightArm1angle": 10.0,
+      "rightArm2angle": 10.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+     {
+      "headangle":-10.0,
+      "leftLeg1angle":-10.0,
+      "leftLeg2angle":10.0,
+      "rightLeg1angle":-10.0,
+      "rightLeg2angle":10.0,
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "headangle":-20.0,
+      "leftLeg1angle":-20.0,
+      "leftLeg2angle":20.0,
+      "rightLeg1angle":-20.0,
+      "rightLeg2angle":20.0,
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 10.0,
+      "leftArm2angle": 10.0,
+      "rightArm1angle": -10.0,
+      "rightArm2angle": -10.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": -10.0,
+      "leftArm2angle": -10.0,
+      "rightArm1angle": 10.0,
+      "rightArm2angle": 10.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 10.0,
+      "leftArm2angle": 10.0,
+      "rightArm1angle": -10.0,
+      "rightArm2angle": -10.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": -10.0,
+      "leftArm2angle": -10.0,
+      "rightArm1angle": 10.0,
+      "rightArm2angle": 10.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "headangle":-10.0,
+      "leftLeg1angle":-5.0,
+      "leftLeg2angle":5.0,
+      "rightLeg1angle":5.0,
+      "rightLeg2angle":-5.0,
+      "leftArm1angle":-7.5,
+      "leftArm2angle":7.5,
+      "rightArm1angle":7.5,
+      "rightArm2angle":-7.5
+    },
+    {
+      
+      "look":1,
+      "headangle":0.0,
+      "leftLeg1angle":-10.0,
+      "leftLeg2angle":10.0,
+      "rightLeg1angle":10.0,
+      "rightLeg2angle":-10.0,
+       "leftArm1angle":-15.0,
+      "leftArm2angle":15.0,
+      "rightArm1angle":15.0,
+      "rightArm2angle":-15.0
+    },
+    {
+      "leftArm1angle":-22.5,
+      "leftArm2angle":22.5,
+      "rightArm1angle":22.5,
+      "rightArm2angle":-22.5
+    },
+    {
+       "leftArm1angle":-30.0,
+      "leftArm2angle":30.0,
+      "rightArm1angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+     {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+     {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+     {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+     {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    
+    {
+      "leftArm1angle":-25.0,
+      "leftArm2angle":25.0,
+      "rightArm1angle":25.0,
+      "rightArm2angle":-25.0
+      
+    },
+    {
+      "leftArm1angle":-20.0,
+      "leftArm2angle":20.0,
+      "rightArm1angle":20.0,
+      "rightArm2angle":-20.0
+      
+    },
+     {
+      "leftArm1angle":-15.0,
+      "leftArm2angle":15.0,
+      "rightArm1angle":15.0,
+      "rightArm2angle":-15.0
+      
+    },
+    {
+      "leftArm1angle":-10.0,
+      "leftArm2angle":10.0,
+      "rightArm1angle":10.0,
+      "rightArm2angle":-10.0
+      
+    },
+     {
+      "leftArm1angle":-5.0,
+      "leftArm2angle":5.0,
+      "rightArm1angle":5.0,
+      "rightArm2angle":-5.0
+      
+    },
+    
+    
+    {
+      
+      "look":0,
+      "headangle":-10.0,
+      "leftLeg1angle":-10.0,
+      "leftLeg2angle":10.0,
+      "rightLeg1angle":-10.0,
+      "rightLeg2angle":10.0,
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "headangle":-20.0,
+      "leftLeg1angle":-20.0,
+      "leftLeg2angle":10.0,
+      "rightLeg1angle":-10.0,
+      "rightLeg2angle":10.0,
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 10.0,
+      "leftArm2angle": 10.0,
+      "rightArm1angle": -10.0,
+      "rightArm2angle": -10.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": -10.0,
+      "leftArm2angle": -10.0,
+      "rightArm1angle": 10.0,
+      "rightArm2angle": 10.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 10.0,
+      "leftArm2angle": 10.0,
+      "rightArm1angle": -10.0,
+      "rightArm2angle": -10.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": -10.0,
+      "leftArm2angle": -10.0,
+      "rightArm1angle": 10.0,
+      "rightArm2angle": 10.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+     {
+      "headangle":10.0,
+      "leftLeg1angle":10.0,
+      "leftLeg2angle":-10.0,
+      "rightLeg1angle":10.0,
+      "rightLeg2angle":-10.0,
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "headangle":20.0,
+      "leftLeg1angle":20.0,
+      "leftLeg2angle":-20.0,
+      "rightLeg1angle":20.0,
+      "rightLeg2angle":-20.0,
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 10.0,
+      "leftArm2angle": 10.0,
+      "rightArm1angle": -10.0,
+      "rightArm2angle": -10.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": -10.0,
+      "leftArm2angle": -10.0,
+      "rightArm1angle": 10.0,
+      "rightArm2angle": 10.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 10.0,
+      "leftArm2angle": 10.0,
+      "rightArm1angle": -10.0,
+      "rightArm2angle": -10.0
+    },
+    {
+      "leftArm1angle": 5.0,
+      "leftArm2angle": 5.0,
+      "rightArm1angle": -5.0,
+      "rightArm2angle": -5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": -10.0,
+      "leftArm2angle": -10.0,
+      "rightArm1angle": 10.0,
+      "rightArm2angle": 10.0
+    },
+    {
+      "leftArm1angle": -5.0,
+      "leftArm2angle": -5.0,
+      "rightArm1angle": 5.0,
+      "rightArm2angle": 5.0
+    },
+    {
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 0.0,
+      "rightArm2angle": 0.0
+    },
+    {
+      "headangle":10.0,
+      "leftLeg1angle":-5.0,
+      "leftLeg2angle":5.0,
+      "rightLeg1angle":5.0,
+      "rightLeg2angle":-5.0,
+      "leftArm1angle":-7.5,
+      "leftArm2angle":7.5,
+      "rightArm1angle":7.5,
+      "rightArm2angle":-7.5
+    },
+    {
+      
+      "look":1,
+      "headangle":0.0,
+      "leftLeg1angle":-10.0,
+      "leftLeg2angle":10.0,
+      "rightLeg1angle":10.0,
+      "rightLeg2angle":-10.0,
+       "leftArm1angle":-15.0,
+      "leftArm2angle":15.0,
+      "rightArm1angle":15.0,
+      "rightArm2angle":-15.0
+    },
+    {
+      "leftArm1angle":-22.5,
+      "leftArm2angle":22.5,
+      "rightArm1angle":22.5,
+      "rightArm2angle":-22.5
+    },
+    {
+       "leftArm1angle":-30.0,
+      "leftArm2angle":30.0,
+      "rightArm1angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+     {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+     {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":40.0,
+      "rightArm2angle":-40.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    },
+    {
+      "leftArm2angle":20.0,
+      "rightArm2angle":-20.0
+    },
+    {
+      "leftArm2angle":30.0,
+      "rightArm2angle":-30.0
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  ]
+}

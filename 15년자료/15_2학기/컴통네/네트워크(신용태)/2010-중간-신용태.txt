@@ -1,0 +1,57 @@
+2010년 컴퓨터 통신과 네트워크 중간시험- 신용태 교수님.
+기억나는대로 쓰긴 했지만 빠진 문제가 몇개 있을겁니다 ^^;;
+
+
+1. 인터넷에서 'best effort' 의 의미는?
+
+2. networ structure 3가지 (network edge, access network, network core)
+
+3. FDM, TDM, statistical multiplexing의 차이 설명.
+
+4. 인터넷 프로토콜 레이어 5가지
+
+5. 인터넷 프로토콜 스택의 계층 유닛 이름.
+
+6. switch와 router에서 쓰이는 레이어(맞나?) (switch : physical, link / router : physical, link, network)
+
+7. 네트워크 지연 4가지 (Processing delay, queuing delay, transmission delay, propagation delay)
+
+8. 가정에서 쓰는 access network 3~4가지 (dial up modem, DSL, HFC, W-LAN)
+
+9. circit switching 과 packet switching의 차이 설명.
+
+10. TCP와 UDP의 차이 서술
+
+11. client-server, peer-to-peer 의 차이 서술
+
+12. HTTP, FTP, SMTP 의 port 번호와 사용하는 transport 프로토콜 (80, 21/20, 25, TCP)
+
+13. FTP에서 'out of band'의 의미는?
+
+14. nonpersistent HTTP 와 persistent HTTP의 차이는?
+
+15. DNS query 의 흐름 모델(?) 2가지 (iterated query, recursive query)
+
+16. DNS를 사용하는 이유?
+
+17. connection-oriented-demux 에서 TCP에 필요한 것 (source IP/port, destinatin IP/port)
+
+18. HTTP에서 stateless의 의미.
+
+19. Web caching 이란?
+
+20. handshaking 이란?
+
+21. botnet PC란? (=좀비 pc)
+
+22. packet sniffing 이란?
+
+23. IP spoofing 이란?
+
+24. checksum 계산하기 (18bit 짜리 데이터 두개를 줌... 그걸로 계산하면 됨)
+
+25. 데이터에 에러가 없으면 receiver checksum 의 값은? (문제가 잘 기억 안나네요.... 여튼 1이 18개 나온다고 하면 됩니다)
+
+26. TCP socket 의 개요 중, 함수 이름 채우기 (2~7번까지 있음.) (bind(), listen(), connect(), accept(), recv(), send())
+
+27. rdt 2.0에서 에러가 있을 시에 발생하는 mechanism 2가지

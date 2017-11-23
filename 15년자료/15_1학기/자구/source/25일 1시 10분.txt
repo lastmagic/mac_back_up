@@ -1,0 +1,166 @@
+struct indiTerm
+{
+	int exp;
+	char var;
+};
+
+class Term()
+{
+	
+	private:
+		int coef;
+		int sumOfexp;
+		indiTerm termArray[26];
+
+	public:
+
+		//Compare();
+		//SumofTerm();
+		//Bigger();
+
+	public bool Compare(Term B)
+	{
+		int i;
+		if(sumOfexp == B.sumOfexp)
+		{
+			for(i=0;termArray[i].var==B.termArray[i].var;i++)
+			{
+
+			}
+
+			if(i==26)
+				return true;
+			else
+				return false;
+
+		}
+		return false;
+	}
+
+	public bool Bigger(Term B)
+	{
+		int i;
+		if(sumOfexp > B.sumOfexp)
+		{
+			return true;
+		}
+
+		else
+		{
+			for(i=0; i<26; i++)
+			{
+				if(termArray[i].exp > B.termArray[i].exp)
+					return true;
+				else if(termArray[i].exp < B.termArray[i].exp)
+					return false;
+
+				else
+				{
+					if(termArray[i].var < B.termArray[i].var)
+						return true;
+					else if(termArray[i].var > B.termArray[i].var)
+						return false;
+				}
+			}	
+
+			return false;
+		}
+
+	}
+
+
+	public Term SumofTerm(Term B)
+	{
+		int i;
+
+		Term C;
+		for(i=0; i<26; i++)
+		{
+			C.termArray[i].var = termArray[i].var;
+			C.termArray[i].exp = termArray[i].exp;
+			C.coef = coef + B.coef;	
+
+		}
+		return C;
+	}
+}
+
+class Polynomial()
+{
+	private:
+		int terms;
+		Term Poly[100];
+
+	public:
+		//SumofPoly();
+
+
+	public Polynomial SumofPoly(Polynomial B)
+	{
+		int i;
+		Polynomial C;
+		int aPos=0,bPos=0,cPos=0;
+		While(1)
+		{
+			if(Poly[aPos].Compare(B.Poly[bPos]))
+			{
+				C.Poly[cPos] = Poly[aPos].SumofTerm(B.Poly[bPos]);
+				aPos++; bPos++; cPos++;
+
+			}
+			else if(Poly[aPos].Bigger(B.Poly[bPos]))
+			{
+				C.Poly[cPos] = Poly[aPos];
+				cPos++; aPos++;
+			}	
+			else if(!(Poly[aPos].Bigger(B.Poly[bPos])))
+			{
+				C.Poly[cPos] = B.Poly[bPos];
+				cPos++; bPos++;
+			}
+
+			if(aPos == terms)
+			{
+				while(1)
+				{
+					if(bPos ==B.terms)
+					{
+						break;
+					}
+					C.Poly[cPos] = B.Poly[bPos];
+					cPos++; bPos++;
+					
+				}
+
+				break;
+			}
+
+			else if(bPos == B.terms)
+			{
+				while(1)
+				{
+					if(aPos == terms)
+					{
+						break;
+					}
+					C.Poly[cPos] = Poly[aPos];
+					cPos++; aPos++;
+					
+				}
+
+				break;
+			}
+
+
+
+		}
+		return C;
+	}
+
+
+}
+
+int main(void)
+{
+	
+}

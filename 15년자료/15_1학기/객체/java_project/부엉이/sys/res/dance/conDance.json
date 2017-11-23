@@ -1,0 +1,54 @@
+{
+  "set":{
+      "look":0,
+      "headangle":0.0,
+      "leftArm1angle": 0.0,
+      "leftArm2angle": 0.0,
+      "rightArm1angle": 180.0,
+      "rightArm2angle": 180.0,
+      "leftLeg2angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0,
+      "leftLeg1angle": 0.0,
+	  "rightLeg1Length": 7,
+	  "rightLeg2Length": 7,
+	  "leftLeg1Length": 7,
+	  "leftLeg2Length": 7
+	  
+  },
+  "dance": [
+    {
+    "time":1000,
+      "FPS":60,
+           "headangle":30.0,
+     "leftArm1angle": 500.0,
+      "leftArm2angle": 500.0,
+      "rightArm1angle": 500.0,
+      "rightArm2angle": 500.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+    },
+    {
+    "time":1000,
+      "FPS":60,
+           "headangle":-60.0,
+     "leftArm1angle": -500.0,
+      "leftArm2angle": -500.0,
+      "rightArm1angle": -500.0,
+      "rightArm2angle": -500.0,
+      "leftLeg2angle": 0.0,
+      "leftLeg1angle": 0.0,
+      "rightLeg2angle": 0.0,
+      "rightLeg1angle": 0.0
+    },
+    {
+    "time":1000,
+      "FPS":60
+ 
+    }
+     
+    
+  ]
+}

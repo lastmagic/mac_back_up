@@ -1,0 +1,51 @@
+int i,j;
+	for (i = 0; i < 200; i++)
+	{
+		if (p.Poly[i].coef == 0)
+		{
+			break;
+		}
+		if ((p.Poly[i].coef > 0) && (i != 0))
+		{
+			os << '+';
+		}
+		else if (p.Poly[i].coef < 0)
+		{
+			os << '-';
+		}
+
+		if ((p.Poly[i].coef == 1) || (p.Poly[i].coef == -1))
+		{
+			if ((p.Poly[i].coef == 1) && (p.Poly[i].termArray[0].exp == 0)){
+				os << 1;
+				continue;
+			}
+		}
+		else if (p.Poly[i].coef > 0)
+		{
+			os << p.Poly[i].coef;
+		}
+		else
+		{
+			
+			os << -p.Poly[i].coef;
+		}
+		for (j = 0; j < 26; j++)
+		{
+			if (p.Poly[i].termArray[j].exp == 0)
+				break
+				;
+			else if (p.Poly[i].termArray[j].exp == 1)
+				os << p.Poly[i].termArray[j].var;
+			else
+			{
+				os << p.Poly[i].termArray[j].var;
+				os << '^';
+				os << p.Poly[i].termArray[j].exp;
+			}
+
+
+		}
+			
+	}
+	

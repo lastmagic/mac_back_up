@@ -1,0 +1,6 @@
+Practical 8에 나와있는
+
+notification은 api23에서 지원하지 않음
+
+
+so, Notification.Builder사용해서 구현 할 것.

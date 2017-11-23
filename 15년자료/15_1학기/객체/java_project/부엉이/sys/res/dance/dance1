@@ -1,0 +1,14 @@
+{
+	"set":{
+	},
+	"dance":[
+	{
+		"time":5000,
+		"FPS":60,
+		"leftLeg2angle":-360.0,
+		"rightLeg2angle":360.0,
+		"rightLeg1angle":-360.0,
+		"leftLeg1angle":360.0
+	}
+	]
+}

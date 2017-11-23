@@ -1,0 +1,134 @@
+#include <stdio.h>
+#include <string>
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+
+class aoeNode
+{
+public:
+	int nodeNum;
+	int inDegree;
+	int	ouDegree;
+
+	
+
+public:
+	aoeNode()
+	{
+
+	}
+	aoeNode(int gNum, int gInde, int gOude)
+	{
+		nodeNum = gNum;
+		inDegree = gInde;
+		ouDegree = gOude;
+	}
+	void insertNode(int num, int inde, int oude)
+	{
+
+	}
+};
+
+class myint
+{
+public: 
+	int end;
+	int weight;
+};
+int main(void)
+{
+	string str;
+	string str2;
+	bool nline=true;
+	int first;
+	int array[100][100];
+	int last;
+	int weight;
+	char *ptr;
+
+
+	while (true)
+	{
+		cin >> str;
+		if (cin.eof())
+			break;
+		if (nline == true)
+		{
+			nline = false;
+			first = atoi(str.c_str());
+		}
+		else
+		{
+			str = strtok(ptr, ",");
+
+		}
+		
+	}
+
+
+
+
+
+	
+	
+	while (cin >> str)
+	{
+		if (cin.eof())
+			break;
+		if (nline == true)
+		{
+			first = atoi(str.c_str());
+			nline = false;
+		}
+		str2 = cin.get();
+		if (str2 == " ")
+			continue;
+		else if (str2 == "\n")
+		{
+			nline = true;
+			first = first + 1;
+		}
+		else if (str2 == ",")
+		{
+			cin >> str2;
+			last = atoi(str.c_str());
+			weight = atoi(str2.c_str());
+			//str, str2 , first 이용해 data 넣으면 됨
+			array[first][last] = weight;
+		}
+		
+	}
+
+
+	char getC=NULL;
+	char before=NULL;
+	while (true)
+	{
+		before = getC;
+		if (scanf("%c", &getC) != EOF)
+			break;
+		if (nline == true)
+		{
+			first = transChar(getC);
+			nline = false;
+		}
+
+	}
+	
+	
+
+
+
+	
+}
+
+
+
+
+int transChar(char c)
+{
+	int i;
+	return i = c - '0';
+}
